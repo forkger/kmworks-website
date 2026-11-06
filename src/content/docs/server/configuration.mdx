@@ -133,4 +133,8 @@ Every key below is commented out at its default value; uncomment to change it. A
 [update-check]
 # periodic check for newer kmrs releases on GitHub (kmrs enhancement; the Java version only fetches releases on demand)
 # enabled = true # env: KOMGA_UPDATECHECK_ENABLED
+
+[logging]
+# log filter for the console and the log files, in RUST_LOG syntax (kmrs enhancement; the Java version sets levels per logger in application.yml)
+# level = "warn,kmrs=info,komga=info" # env: RUST_LOG, which wins when set
 ```
